@@ -27,9 +27,10 @@ To run the website on your computer, (assuming you are using a Mac, if not, it m
     - cd into the teawebsite folder which holds the manage.py file
     - run the command: python3 manage.py runserver
     - open up a browser and enter the following URL 127.0.0.1:8000/
-    - There you go, now you should be on the Home Page.
-    - To access the admin page and make changes go to 127.0.0.1:8000/admin/
-    - The current superuser has username: demo, email: demo@example.com, password: demopassword
+    
+There you go, now you should be on the Home Page.
+To access the admin page and make changes go to 127.0.0.1:8000/admin/
+The current superuser has username: demo, email: demo@example.com, password: demopassword
 
 Note About Images in Tea List
 ---------------------------------
