@@ -1,0 +1,29 @@
+{% extends "base_generic.html" %}
+
+{% block navigation %}
+
+	<li class="active"><a href="{% url 'index' %}">Home</a></li>
+	<li><a href="{% url 'teas' %}">Teas</a></li>
+
+
+{% endblock %}
+
+
+{% block content %}
+<div class="container col-md-offset-2">
+		
+	<h2>Drink Tea!</h2>
+	<div class="col-md-10">
+		<p class="intro">Tea by definition is "a hot drink made by infusing the dried, crushed leaves of the tea plant in boiling water". However, if you follow
+		this definition and make all of your teas with boiling water, you will not get optimal results. Tea can have different flavors depending on
+		how it is prepared and some teas, such as Green Tea, taste better if made with slightly cooler water. Then instead of being bitter, it will
+		taste slightly sweet.</p>
+
+		<p class="intro">There are many ways to enjoy tea with some combinations being more pleasant or complementary than others. I hope that by coming here you
+		will find a way to enjoy tea in a way that suits your taste.</p>
+
+		{% load static %}
+		<img src="{% static 'imgs/home.jpg' %}" height=100% width=100%>
+	</div>
+</div>
+{% endblock %}

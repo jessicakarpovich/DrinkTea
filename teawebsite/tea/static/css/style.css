@@ -1,0 +1,82 @@
+html, body {
+	height: 100%;
+}
+
+/*
+ * This is for the heading on the home page
+ */
+h2 {
+	font-size: 4em;
+	padding: 0px 0px 30px 0px;
+}
+
+/*
+ * This is for the paragraphs on the home page so that the text will be larger
+ */
+.container .intro {
+	padding-bottom: 10px !important;
+	font-size: 1.2em;
+}
+
+/*
+ * This is to make the link text white
+ */
+.navbar a {
+	color: white;
+}
+
+/*
+ * This is to change the text and background color of the active link
+ */
+.navbar-custom .active > a,
+.navbar-custom .active > a:hover,
+.navbar-custom .active > a:focus {
+	color: #ede1e3;
+	background-color: #732642;
+}
+
+/*
+ * This is to change the background color of one of the links in the list
+ * Does not apply to header/brand name
+ */
+.navbar-custom .nav > li > a:hover,
+.navbar-custom .nav > li > a:focus {
+	background-color: #8e1b4b;
+}
+
+
+/*
+ * This is for the color of the navbar itself
+ */
+.navbar-custom {
+	/*background-color: #ff3399;*/
+	background-color: #c11b60;
+	border-color: #8e1b4b;
+}
+
+footer {
+	background-color: #663e3e;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 40px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+/*
+ * The following styling is only for the tea-detail page
+ */
+
+.desc {
+	padding: 40px 0px 20px 0px;
+}
+
+dl {
+	padding: 20px 0px 10px 40px;
+}
+
+dd {
+	padding: 0px 0px 10px 0px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% block title %}<title>Home</title>{% endblock %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- add links to CSS here later-->
+
+		{% load static %}
+		
+		<link rel="stylesheet" href="{% static 'bootstrap-3.3.7-dist/css/bootstrap-theme.css' %}">
+		<link rel="stylesheet" href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.css' %}">
+
+		<!-- this is a link to my custom CSS -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+
+
+		{% block links %}
+		{% endblock %}
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-custom">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="{% url 'index' %}">DrinkTea!</a>
+				</div>
+
+				<ul class="nav navbar-nav">
+
+						{% block navigation %}
+						{% endblock %}
+				</ul>
+			</div>
+		</nav>
+		
+			{% block content %}
+			{% endblock %}
+		
+		<footer class="container-fluid text-center">
+			<p>Created by: Jessica Karpovich</p>
+		</footer>
+
+	</body>
+	
+</html>

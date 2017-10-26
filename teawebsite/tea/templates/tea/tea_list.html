@@ -1,0 +1,44 @@
+{% extends "base_generic.html" %}
+
+{% block navigation %}
+
+	<li><a href="{% url 'index' %}">Home</a></li>
+	<li class="active"><a href="{% url 'teas' %}">Teas</a></li>
+
+{% endblock %}
+
+
+
+{% block content %}
+<div class="container">
+
+	<h1>Suggested Teas</h1>
+	<hr>
+
+	{% if tea_list %}
+
+		<div class="row">
+
+		{% for tea in tea_list %}
+
+		{% load static %}
+
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				<a href="{{ tea.get_absolute_url }}"><img class="img-responsive" src="{% with 'imgs/'|add:tea.image_name1 as image_static %}
+					{% static image_static %}">
+				{% endwith %}
+				
+				<div class="caption"><p>{{ tea.name }}</p></div></a>
+			</div>
+		</div>
+
+		{% endfor %}
+	</div>
+</div>
+
+	{% else %}
+		<p>Sorry, there is no more tea in this world.</p>
+
+	{% endif %}
+{% endblock %}
